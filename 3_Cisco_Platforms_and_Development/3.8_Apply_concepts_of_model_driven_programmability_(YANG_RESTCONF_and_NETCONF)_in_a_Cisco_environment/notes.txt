@@ -1,0 +1,79 @@
+Data Models
+
+module:
+	leaf:
+		type
+		description
+		max-length
+		min-length
+
+--------------------------------------------------
+
+YANG(Yet Another Next Generation)
+
+Module Interfaces:
+	container interfaces:
+		list interface:
+			key "name";
+			leaf name:
+				type string
+				mandatory true
+				configuration true
+	container interface-state:
+		leaf admin-status:
+			type enumerator:
+				enum "up"
+				enum "down"
+				enum "testing"
+
+--------------------------------------------------
+
+YANG Models: 
+	- https://github.com/CiscoDevNet/yang-explorer
+	- https://yangcatalog.org/yang-search/
+
+
+
+NETCONF
+
+- SSH
+- TCP
+- Automate
+- Encrypt
+- Port 830
+
+1. Get Operational state
+2. Get Configuration state
+3. Edit Configuration
+
+
+Content		Conf/Op data		<data>
+Operations	Actions to take		<get>, <get-conf>, <edit-conf>
+Messages	RPC			<rpc>, <rpc-reply>
+Transport	TCP/IP			SSH
+
+NERCONF OPERATIONS:
+
+close-session			Terminate this session
+commit					Commit the contents of the <candidate/> configuration database to the <running/> configuration database
+copy-config				Copy a configuration database
+create-subscription		Create a NETCONF notification subscription
+delete-config			Delete a configuration database
+discard-changes			Clear all changes from the <candidate/> configuration database and make it match the <running/> configuration database
+edit-config				Modify a configuration database
+get						Retrieve data from the running configuration database and/or device statistics
+get-config				Retrieve data from the running configuration database
+kill-session			Terminate another session
+lock					Lock a configuration database so only my session can write
+unlock					Unlock a configuration database so any session can write
+validate				Validate the entire contents of a configuration database
+
+-----------------------------------------------------------------
+
+RESTCONF:
+
+- basic auth
+- Accept: application/yang-data+json
+- Content-Type: application/yang-data+json
+
+- "restconf; http server; http auth local; http secure-server;" starting restconf

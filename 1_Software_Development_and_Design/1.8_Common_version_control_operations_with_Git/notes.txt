@@ -1,0 +1,26 @@
+documentation: https://git-scm.com/docs
+learn git: https://learngitbranching.js.org/
+
+git
+
+init: Create an empty Git repository or reinitialize an existing one
+clone: Clone a repository into a new directory
+
+add: Add file contents to the index
+status: Show the working tree status
+diff: Show changes between commits, commit and working tree, etc
+commit: Record changes to the repository
+restore: Restore working tree files
+reset: Reset current HEAD to the specified state
+
+branch: List, create, or delete branches
+checkout:  Switch branches or restore working tree files
+switch: Switch branches
+merge: Join two or more development histories together
+log: Show commit logs
+stash: Stash the changes in a dirty working directory away
+
+fetch: Download objects and refs from another repository
+pull: Fetch from and integrate with another repository or a local branch
+push: Update remote refs along with associated objects
+remote: Manage set of tracked repositories

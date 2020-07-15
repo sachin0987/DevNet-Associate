@@ -1,0 +1,12 @@
+Functions vs methods
+- Function a block of code assigned to a symbol
+- Methods are functions defined as a part of a class invoked by instance of that class
+
+OOPS
+- classes and objects
+
+Modules
+- import
+
+Refactoring the Code:
+- Cleaning the code without adding more functionality

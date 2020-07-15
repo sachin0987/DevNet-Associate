@@ -1,0 +1,86 @@
+Why plain text?
+- structures for computer
+- readable by humans
+- open and extensible
+- self describing
+- long lifespan
+
+---------------------------------------------
+
+XML:
++ legacy support
++ supported by SOAP
+- long
+
+JSON:
++ popular
++ lightweight
++ native to JS
++ compressed to a single line, whitespace does not have any meaning
+- short
+
+YAML:
++ human friendly
++ compact
++ ideal for configuration
+- whitespace matters
+
+
+---------------------------------------------
+
+XML:
+
+Extensible Markup Language
+tags
+- < Person Id="2"></Person>
+root tag
+prolog 
+- starting tag <?xml version="1.0" encoding="UTF-8" ?>
+attributes 
+- < Person Id="2"> here Id is attribute  
+elements
+- < Person Id="2">{{elements}}</Person>
+empty elements
+- <EmptyElement/>
+
+
+---------------------------------------------
+
+XML DOMS:
+
+XML Document Object Model
+tree like structure
+- siblings, parents, childs
+
+---------------------------------------------
+
+JSON:
+javascript Object Notation
+keys and values
+recognizes data types(boolean, numbers, string)
+
+
+---------------------------------------------
+
+JSON objects and array:
+
+nesting
+
+
+---------------------------------------------
+
+YAML:
+
+YAML Ain't Markup Language
+Indentation level
+no inverted commas needed though accepted
+starts with --- ends with ...
+
+
+---------------------------------------------
+
+YAML more:
+
+can use escape char in quotes
+can have multiple line strings
+blank line for newline
